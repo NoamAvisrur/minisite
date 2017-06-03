@@ -1,0 +1,122 @@
+@media screen and (max-width: 600px) {
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form_container {
+        width: 100%;
+        order: 2;
+    }
+    .slides_container {
+        height: 100vh;
+    }
+    .slides_div{
+        height: 50vh;
+        width: 100%;
+    }
+    .slides_div:first-child .grass{
+        display: none;
+    }
+    .slides_div img:first-child{
+        height: 50vh;
+        display: block;
+        margin: 0 auto;
+    }
+    article{
+        display: block;
+        height: 90vh;
+    }
+    form div{
+        margin-top: 1rem; 
+    }
+    form{
+        height: auto;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+    }
+    .flex{
+        display: block;
+    }
+    main {
+        width: 100%;
+        order: 1;
+    }
+    nav button {
+        height: 10vh;
+        font-size: 1rem;
+    }
+    article .text {
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    .text img {
+        float: right;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 25vh;
+        object-fit: cover;
+    }
+    section div:first-child img{
+        width: 80%;
+    }
+}    
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    form div{
+        margin-top: 1rem;
+    }
+    textarea {
+        margin: 0 auto;
+        display: block;
+    }
+    input[type="submit"]{
+        display: block;
+        margin-top: 1rem;
+        width: 90%;
+    }
+    form{
+        height: auto;
+    }
+    .form_container {
+        width: 100%;
+        order: 2;
+    }
+    main {
+        width: 100%;
+        order: 1;
+    }
+    article{
+        height: 54vh;
+    }
+    nav button {
+        height: 18vh;
+        font-size: 1rem;
+    }
+    section div:first-child img{
+        width: 80%;
+    }
+    input, select{
+        display: inline;
+        width: auto;
+    }
+}    
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+    section div:first-child img{
+        width: 80%;
+    }
+    nav button{
+        font-size: 1rem;
+    }
+    form img{
+        width: 90%;
+    }
+    .form_container{
+        width: 25%;
+    }
+}
