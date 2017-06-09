@@ -17,15 +17,13 @@ class Lead {
     }
     
     private function sendLeadToMail(){
-        $message = "name: $this->name /n
-                   tel: $this->tel /n
-                   email: $this->email /n
-                   pet: $this->pet /n
-                   reason: $this->why_adopt";          
-        if (mail("noamavisrur@gmail.com", "new potential adopter", $message, "From: $this->email")){
-            echo 'sent';
-        }else{
-            echo 'didnt sent';
-        }
+        $message = "name: $this->name\r\n
+                   tel: $this->tel\r\n
+                   email: $this->email\r\n
+                   pet: $this->pet\r\n
+                   reason: $this->why_adopt\r\n";
+        echo $message;
+        include 'phpmailer.php';
     }
 }
+
